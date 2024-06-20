@@ -1,0 +1,22 @@
+{
+	"role": {
+		"name": "TEST_ROLE",
+		"system_privileges": [
+			"CATALOG READ",
+			"BACKUP ADMIN"
+		],
+		"object_privileges": [
+			{
+				"name": "sys_security._password_blacklist",
+				"type": "TABLE",
+				"privileges": ["SELECT", "INSERT", "UPDATE", "DELETE"]
+			}
+		],
+		"schema_privileges": [
+			{
+				"reference": "_SYS_STATISTICS_SCHEMA_REFERENCE",
+				"privileges": ["SELECT"]
+			}
+		]
+	}
+}
